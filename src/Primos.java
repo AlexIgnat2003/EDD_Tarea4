@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
 public class Primos {
+
+    /**
+     *
+     * @param max es el numero maximo al que contara
+     * @return devuelve un array de enteros con todos los numeros primos
+     * comprimdos entre el rango establecido por el parametro max
+     */
     // Generar números primos de 1 a max
     public static int[] generarPrimos (int max) {
         int i,j;
@@ -37,6 +44,13 @@ public class Primos {
         }
     }
 
+    /**
+     *
+     * @param dim  las dimensiones del array
+     * @param esPrimo evalua cada numero para que solo seleccione los primos
+     * @param cuenta  numero total de primos del array
+     * @return devuelve un array de enteros primos
+     */
     private static int[] rellenaVector(int dim, boolean[] esPrimo, int cuenta) {
         int i;
         int j;
@@ -49,6 +63,12 @@ public class Primos {
         return primos;
     }
 
+    /**
+     *
+     * @param dim  las dimensiones del array
+     * @param esPrimo evalua cada numero para que solo seleccione los primos
+     * @return develve el numero total de primos
+     */
     private static int contadorPrimos(int dim, boolean[] esPrimo) {
         int i;
         int cuenta = 0;
@@ -59,6 +79,12 @@ public class Primos {
         }
         return cuenta;
     }
+
+    /**
+     *
+     *  @param dim  las dimensiones del array
+     *  @param esPrimo evalua cada numero para que solo seleccione los primos
+     */
 
     private static void criba(int dim, boolean[] esPrimo) {
         int j;
@@ -73,6 +99,10 @@ public class Primos {
         }
     }
 
+    /**
+     * Elimina los numeros 0 y 1
+     * @param esPrimo evalua cada numero para que solo seleccione los primos
+     */
     private static void eliminarNoPrimos(boolean[] esPrimo) {
         esPrimo[0] = esPrimo[1] = false;
     }
