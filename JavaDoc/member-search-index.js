@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"Primos","l":"generarPrimos(int)"},{"p":"<Unnamed>","c":"Main","l":"Main()","url":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"Main","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"<Unnamed>","c":"Primos","l":"Primos()","url":"%3Cinit%3E()"}]
